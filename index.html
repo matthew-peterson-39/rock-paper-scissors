@@ -9,28 +9,54 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="user-select">
-        <button class="rock-user">Rock</button>
-        <button class="paper-user">Paper</button>
-        <button class="scissor-user">Scissors</button>
+
+    <div class="title">
+        <h1>Rock-Paper-Scissors</h1>    
     </div>
 
-    <div class="computer-select">
-        <button class="rock-comp">Rock</button>
-        <button class="paper-comp">Paper</button>
-        <button class="Scissors-comp">Scissors</button>
-    </div>
+<div class="main-section">    
+        <div class="user-select">
+            
+            <div class="score-board">
+                <h2>
+                    Player Score:
+                </h2> 
+                    <div class="player-counter">
+                        <p id="player-score">0</p>
+                    </div> 
+                <button class="rock-user">Rock</button>
+                <button class="paper-user">Paper</button>
+                <button class="scissor-user">Scissors</button>
+            </div>
 
-    <div class="score-board player">Score: 
-        <div class="player-counter"><p id="player-score">0</p></div>
-    </div>
-   
-    <div class="divider">|</div>
-    <div class="score-board computer">Score: 
-        <div class="computer-counter"><p id="cpu-score">0</p></div>
-    </div>
+            <div class="current-selection">
+                <h3>Current: </h3>
+            </div>
+
+        </div>
     
-    <div class="computer-select"></div>
+    <div class="divider"></div>
+    
+    <div class="computer-select">    
+       
+        <div class="score-board">
+            <h2>Computer Score:</h2>
+            
+            <div class="computer-counter">
+                <p id="cpu-score">0</p>
+            </div>
+        
+            <button class="rock-comp">Rock</button>
+            <button class="paper-comp">Paper</button>
+            <button class="Scissors-comp">Scissors</button>
+        </div>
+
+        <div class="current-selection">
+            <h3>Current: </h3>
+        </div>
+
+    </div>
+</div>
 
     <div class="play-button">
         <button>Play</button>
