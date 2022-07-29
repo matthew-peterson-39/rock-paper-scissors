@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style type="stylesheet" href="styles.css"></style>
-    <script src="myscripts.js" defer></script> 
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="main.js" defer></script> 
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <div class="user-select">
+        <button class="rock-user">Rock</button>
+        <button class="paper-user">Paper</button>
+        <button class="scissor-user">Scissors</button>
+    </div>
+
+    <div class="computer-select">
+        <button class="rock-comp">Rock</button>
+        <button class="paper-comp">Paper</button>
+        <button class="Scissors-comp">Scissors</button>
+    </div>
+
+    <div class="score-board player">Score: 
+        <div class="player-counter"><p id="player-score">0</p></div>
+    </div>
+   
+    <div class="divider">|</div>
+    <div class="score-board computer">Score: 
+        <div class="computer-counter"><p id="cpu-score">0</p></div>
+    </div>
     
+    <div class="computer-select"></div>
+
+    <div class="play-button">
+        <button>Play</button>
+    </div>
 </body>
 </html>
