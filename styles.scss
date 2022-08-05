@@ -35,6 +35,23 @@ h3 {
 #score {
     text-align: center;
     font-size: 32px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cpu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #choice {
