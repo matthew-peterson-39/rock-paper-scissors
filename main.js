@@ -1,43 +1,3 @@
-//event listener for buttons
-    //on click, get button clicked
-        //user choice = buttonClicked
-        //cpuChoice = select cpu choice
-   
-    //if user === rock
-        //if cpu scissor
-            //return userWin
-        //if cpu rock 
-            // return tie
-        //if cpu paper
-            // return cpuWin
-    
-    //if user === scissor
-        //if cpu scissor
-            //return tie
-        //if cpu rock 
-            // return cpuWin
-        //if cpu paper
-            // return userWin
-
-    //if user === paper
-        //if cpu scissor
-            //return cpuWin
-        //if cpu rock 
-            // return userWin
-        //if cpu paper
-            // return tie
-
-//userWin 
-    //increment userScore ++ 1
-
-//cpuWin
-    //increment cpuScore ++1
-
-//tie 
-    //popup -> it was a tie!
-    //return
-
-
 const cpu_score = document.querySelector('#cpu_score');   
 const user_score = document.querySelector('#user_score'); 
 const choices = document.querySelectorAll('button');
@@ -113,20 +73,20 @@ function get_winner(user, cpu) {
 }
 
 function cpu_win() {
-    //You lost!
+    alert('You lose!');
     update_score('cpu');
     return;
 }
 
 function user_win() {
-    //You won!
+    alert('You won!');
     update_score('user');
     return;
 }
 
 function stale_mate() {
-    //It was a tie!
-    //return;
+    alert('Tie! No winner this round.')
+    return;
 }
 
 function update_score(winner) {
